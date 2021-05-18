@@ -1,0 +1,531 @@
+@import 'auth.css';
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: border-box;
+
+}
+
+.form_image {
+
+    padding: 1rem;
+
+}
+
+.form_image img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.maincontainer .form {
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.form .my_image {
+    margin: 0;
+}
+
+
+input[type="file"] {}
+
+
+
+.form_image {
+
+    outline: 1px solid blue;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.label {
+
+    list-style-type: none;
+    height: none;
+    margin: 0.5rem;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+
+}
+
+
+
+.label {
+
+    display: block;
+
+}
+
+.label.active {
+
+    display: none;
+
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+form input {
+
+    margin: 1rem;
+
+
+}
+
+label {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+
+.form_title {
+
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 1rem;
+    border-bottom: 1px solid blue;
+
+}
+
+.form_title:focus {
+
+    outline: none;
+}
+
+.form_title::placeholder,
+.form_description::placeholder {
+
+    font-size: 0.9rem;
+    border-radius: 2px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+}
+
+.form_description {
+
+    border: none;
+    border-bottom: 1px solid blue;
+    margin-top: 1.2rem;
+}
+
+.form_description:focus {
+    outline: none;
+}
+
+nav {
+    margin: 0;
+    padding: 1rem;
+}
+
+.form_img {
+    display: none;
+}
+
+.form_img.active {
+    display: block;
+}
+
+
+.form_btn {
+
+
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.6);
+    color: white;
+    border: none;
+    margin: 2rem 0;
+    padding: 0.3rem;
+    cursor: pointer;
+
+}
+
+
+.menu {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: end;
+    margin: 0;
+    letter-spacing: 1px;
+
+}
+
+.menu_add {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu_add li {
+    margin-left: 2rem;
+}
+
+
+
+.listItems_container {
+    padding: 0 5rem;
+}
+
+.listItems .card_button {
+
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.6);
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.listItems .row .each .card {
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-top: 1rem
+}
+
+.each .card .card_img {
+
+    width: 100%;
+    height: 10rem;
+
+}
+
+/* @media(max-width: 700px){
+    
+    .each{
+        width: 400px;
+    }
+} */
+
+.listItems .card_title {
+    margin-bottom: 0.5rem;
+}
+
+.listItems .card_button {
+    justify-self: flex-start;
+
+}
+
+.card_date {
+    font-size: 12px;
+    margin-bottom: 3rem;
+}
+
+.card_title span {
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card_title {
+    font-size: 14px;
+}
+
+.card_date span {
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.listItems .card_title,
+.card_body {
+
+    text-align: start;
+}
+
+.listItems .card-body .card_titl span {
+
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+
+}
+
+.post_image {
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+
+.post_image img {
+    border-radius: 10px;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.post_title {
+    margin: 1.5rem 1rem;
+    font-size: 20px;
+}
+
+
+.post_title span {
+
+    font-weight: 800;
+    font-size: 24px;
+}
+
+
+
+.header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.post_subtitle {
+    margin-left: 1rem;
+}
+
+.post_date {
+    font-size: 13px;
+}
+
+.post_info {
+    margin-left: 1em;
+}
+
+@media(max-width: 700px) {
+    .post_image img {
+        height: 25rem;
+    }
+}
+
+
+@media(max-width: 500px) {
+    .post_image img {
+        height: 20rem;
+    }
+}
+
+.mainsection {
+    position: relative;
+}
+
+.footer {
+
+    display: flex;
+    justify-content: center;
+    max-height: 40px;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.post_const {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+
+}
+
+
+
+.post_const_id {
+    margin: 0;
+}
+
+
+.post_edit {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 255, 0.8);
+    ;
+    border: none;
+    padding: 0 0.5rem;
+    margin-left: 1rem;
+    text-decoration: none;
+
+
+}
+
+.post_edit:hover {
+
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 255);
+
+
+}
+
+.container_user p {
+
+    color: blue;
+
+}
+
+.container_user p span {
+
+    color: rgb(26, 174, 102);
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+
+.post_delete {
+    margin: 0;
+    margin-left: 1rem;
+    color: white;
+    background: red;
+    border: none;
+    cursor: pointer;
+}
+
+.post_back{
+    margin-left: 2.5rem;
+}
+
+.post_form{
+
+    margin-left: 1rem;
+
+}
+
+.post_form_title{
+    letter-spacing: 1px;
+}
+
+.post_form textarea{
+
+    width: 20rem;
+    height: 10rem;
+
+}
+
+.post_set{
+    display: flex;
+    flex-direction: column;
+}
+
+.post_btn{
+
+    border-radius: 15px;
+    border: none;
+    margin-top: 1rem;
+    width: 6rem;
+    background-color: rgba(0,0,255,0.8);
+    color: white;
+    cursor: pointer;
+
+
+}
+
+
+.post_form_acc{
+    margin-left: 1rem;
+}
+
+.post_form_title{
+
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    letter-spacing: 2px;
+
+
+}
+
+.post_form_comment{
+
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 1rem;
+
+}
+
+
+.post_form_comment li{
+
+    margin: 0;
+    margin-top: 2rem;
+    width: 80%;
+    box-shadow: 2px 4px #888888;
+    position: relative;
+}
+
+
+
+.comment_name{
+
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.comment_date{
+    font-size: 12px;
+}
+
+.comment_delete{
+    
+    border: none;
+    top: 0.5rem;
+    right: 1rem;
+    position: absolute;
+    cursor: pointer;
+    color: red;
+    background-color: white;
+
+}
+
+@media(max-width: 500px){
+    
+    .post_image {
+        display: block;
+        margin: 1rem auto;
+    
+    }
+
+    .post_form_comment li{
+
+        margin: 0;
+        margin-top: 2rem;
+        width: 90%;
+        box-shadow: 2px 4px #888888;
+        position: relative;
+    }
+
+}
